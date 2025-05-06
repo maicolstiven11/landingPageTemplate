@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu_nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="telefono">(+605) 1234-56789</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="aside">
+        <ul class="ul aside">
+            <li class="aside_house"><a href="#"><img src="img/Imagen1.png" alt=""></a></li>
+            <li><a href="#" ><img src="img/Imagen2.png" alt="" class="twiter"></a></li>
+            <li><a href="#"><img src="img/Imagen3.png" alt=""></a></li>
+            <li><a href="#"><img src="img/Img4.png" alt=""></a></li>
+            <li><a href="#"><img src="img/img5.png" alt=""></a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="derecha">
+            <h1>Book an Appointment</h1>
+
+            <form action="" method="get" enctype="multipart/form-data" class="formulario">
+                <!-- Fila 1: Nombre y Apellido -->
+                <div class="fila">
+                    <div class="div-PrimerNombre">
+                        <label for="primer_nombre">First Name:</label>
+                        <input type="text" placeholder="Your first name*">
+                    </div>
+                    <div class="div-SegundoNombre">
+                        <label for="segundo_nombre">Last Name:</label>
+                        <input type="text" placeholder="Your last name*">
+                    </div>
+                </div>
+            
+                <!-- Fila 2: SOLO email -->
+                <div class="div-email">
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" placeholder="Your email address*">
+                </div>
+            
+                <!-- Fila 3: SOLO contacto -->
+                <div class="div-number">
+                    <label for="number">Contact No:</label>
+                    <input type="number" placeholder="Your contact no*">
+                </div>
+            
+                <!-- Fila 4: Fecha y Hora -->
+                <div class="fila">
+                    <div class="div-date">
+                        <label for="date">Date</label>
+                        <input type="date" placeholder="Appointment date*">
+                    </div>
+                    <div class="div-time">
+                        <label for="time">Time</label>
+                        <input type="time" placeholder="Appointment time*">
+                    </div>
+                </div>
+            
+                <button type="submit">Book now</button>
+            </form>
+            
+
+        </section>
+        <section class="hizquierda">
+            <h1>hola</h1>
+        </section>
+
+    </main>
+</body>
+</html>
