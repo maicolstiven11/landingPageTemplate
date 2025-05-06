@@ -69,7 +69,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 19vh;
+    margin-left: 18vh;
 }
 
 nav a {
@@ -98,15 +98,15 @@ ul li  .telefono{
 /* Para que el contenido no flote alrededor del nav y aside */
 main { 
     height: 78vh;
-    width: 167vh;
+    width: 162vh;
     position: absolute;
     margin-top: 15vh;
     margin-left: 34vh;
-
+    box-shadow: 1px -2px 40px rgba(107, 107, 107, 0.39) ;
 }
 
 main .derecha {
-    width: 43.5vh;
+    width: 41vh;
     height: 38vh;
     padding: 20vh;
     margin: 0 auto; /* centra horizontalmente */
@@ -125,8 +125,8 @@ main .derecha {
 
     
 }
-main .hizquierda{
-    width: 43.5vh;
+main .izquierda{
+    width: 41vh;
     height: 38vh;
     padding: 20vh;
     margin: 0 auto; /* centra horizontalmente */
@@ -146,7 +146,6 @@ main .hizquierda{
 /* Contenedor común de pares en fila */
 .fila {
     width: 100%;
-    overflow: hidden; /* para limpiar los float */
     margin-bottom: 20px;
 }
 
@@ -165,8 +164,11 @@ main .hizquierda{
 .div-email,
 .div-number {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     float: none;
+}
+.fila div input{
+    margin-bottom: 10px;
 }
 
 /* Labels */
@@ -193,20 +195,111 @@ main .hizquierda{
 /* Botón */
 .formulario button {
     display: block;
-    width: 21vh;
+    width: 18vh;
+    height: 4.5vh;
     margin-top: 120px;
     font-weight: bold;
-    padding: 15px;
-    background-color: #00c087;
+    padding: 8px;
+    background-color: rgba(31,169,117,255);
     color: white;
     border: none;
     border-radius: 80px;
     font-size: 16px;
     cursor: pointer;
     margin:0 auto;
+    
 
 }
 
 .formulario button:hover {
-    background-color: #00a772;
+    background-color: rgba(19, 126, 92, 0.938);
+}
+
+.boton::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px ;
+    background-image: url(img/play.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.izquierda{
+    background-image: linear-gradient(45deg, rgba(5, 54, 83, 0.767) 0%,rgba(13, 92, 112, 0.555) 99%, rgba(16, 98, 146, 0.747) 100%), url(img/odontologojpg.jpg);
+    background-size: contain;
+}
+.izquierda_button{
+    display: block;
+    width: 18vh;
+    height: 4.5vh;
+    margin-top: 120px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: rgba(19, 126, 92, 0.938);
+    color: white;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    margin:0 auto;
+}
+.izquierda_button2{
+    display: block;
+    width: 18vh;
+    height: 4.5vh;
+    margin-top: 120px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px, solid;
+    color: rgba(19, 126, 92, 0.938);
+    border-radius: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    margin:0 auto;
+}
+.izquierda_button2::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px ;
+    border-radius: 50%;
+    background-image: url(img/play.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.texto_izquierda{
+    background-color: rgba(0, 255, 255, 0.377);
+    height: 58vh;
+    width: 81vh;
+    margin-left: -20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 60px;
+}
+.texto_izquierda h1{
+    color: white;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-left: 9vh;
+
+}
+.texto_izquierda .title_estilo{
+    color: rgba(19, 126, 92, 0.938);
+    margin-bottom: 20px;
+}
+.texto_izquierda p{
+    margin-left: 9vh;
+    margin-right: 8vh;
+    font-size: 20px;
+    color: white;
+}
+.texto_izquierda button{
+    margin-top: 4vh;
+    margin-left: 9vh;
+    margin-right: 1vh;
+    display: inline;
 }
